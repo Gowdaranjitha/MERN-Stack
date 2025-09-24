@@ -1,21 +1,27 @@
-<<<<<<< HEAD
-# React + Vite
+# React Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React-based Task Manager** application to manage our daily tasks efficiently. This project demonstrates the use of React functional components, state management using `useState`, and dynamic rendering.
 
-Currently, two official plugins are available:
+## 🔹 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Tasks**: Create new tasks with a title and description.
+- **View Tasks**: See all tasks in a neat, organized layout.
+- **Update Task Status**: Mark tasks as `Pending` or `Completed` using a dropdown.
+- **Delete Tasks**: Remove tasks that are no longer needed.
+- **Color-coded UI**: Completed tasks appear green, pending tasks appear red, making it easy to differentiate.
+- **Responsive Layout**: Works well on desktop and mobile screens.
 
-## React Compiler
+## 🔹 How It Works
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **State Management**:  
+   - The `Home` component stores all tasks in a React state (`useState`).
+   - Each task has a title, description, and status.
 
-## Expanding the ESLint configuration
+2. **Task Display**:  
+   - The `TaskCard` component is used to render each task.
+   - Users can see task details and status dynamically.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# MERN-Stack
-Includes React, Node.js , JavaScript
->>>>>>> c017f229e633550e00a500ce2e4bcfa8fa070feb
+3. **Updating Tasks**:  
+   - Users can change the status of a task (Pending → Completed) via a dropdown.
+   - Users can delete tasks using the **Delete** button.
+   - Changes are reflected immediately in the UI.
